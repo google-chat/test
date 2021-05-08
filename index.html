@@ -1,37 +1,15 @@
-<html>
+<p>This is test page 3</p>
+<input id="user-id-input" />
+
+<button id="open-df-button" type="submit">Submit</button>
 
 <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
-<body>
-
-<p> This is test 4 </p>
-<input id = "user-id-input" />
-<button id="open-df-button" type="submit" onClick = "setAtri()"> Submit </button>
 <df-messenger
 intent="WELCOME"
 chat-title="testchat"
 agent-id="ab330c97-9846-44bf-b9f3-d661345935cb"
 language-code="en"
-user-id="tes18"
-></df-messenger>
-<script>
-
-function changeChatid(){
-
-var userInput = document.getElementById("user-id-input");
-var dfMessenger = document.querySelector('df-messenger');
-var chatid = userInput.Value || ""
-console.log("old value -- ",dfMessenger)
-dfMessenger.setAttribute("user-id",chatid);
-var dfMessenger = document.querySelector('df-messenger');
-console.log("updated value -- ",dfMessenger)
+user-id="tes15"
 
 
-}
-
-
-</script>
-
-
-</body>
-
-</html>
+</df-messenger>
